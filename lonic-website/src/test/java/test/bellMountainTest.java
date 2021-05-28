@@ -30,6 +30,7 @@ public class bellMountainTest extends baseTest{
         .clickToGoDown().isScene0Present()
         ;
     }
+    @Test
     public void testCircleRoute()
     {
         driver.get("https://sotatek-duyta.github.io/Chris-test/home");
