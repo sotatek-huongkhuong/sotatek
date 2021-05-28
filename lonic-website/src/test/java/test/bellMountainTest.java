@@ -3,7 +3,7 @@ package test;
 import org.testng.annotations.Test;
 import page.*;
 public class bellMountainTest extends baseTest{
-    @Test
+    @Test(discription="in this test case i check the viewport and background image change")
     public void testViewPortAndChangeScene()
     {
         driver.get("https://sotatek-duyta.github.io/Chris-test/home");
@@ -30,7 +30,7 @@ public class bellMountainTest extends baseTest{
         .clickToGoDown().isScene0Present()
         ;
     }
-    @Test
+    @Test(description="In this testcase, I check the top path circle")
     public void testCircleRoute()
     {
         driver.get("https://sotatek-duyta.github.io/Chris-test/home");
