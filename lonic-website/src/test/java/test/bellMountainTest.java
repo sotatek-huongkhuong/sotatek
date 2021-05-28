@@ -4,7 +4,7 @@ import org.testng.annotations.Test;
 import page.*;
 public class bellMountainTest extends baseTest{
     @Test
-    public void bellTest()
+    public void testViewPortAndChangeScene()
     {
         driver.get("https://sotatek-duyta.github.io/Chris-test/home");
         scene0Page scene0= new scene0Page(driver);
@@ -29,7 +29,23 @@ public class bellMountainTest extends baseTest{
         .clickToGoDown().isScene1Present().verifyBtnGoDownVisibleInViewPort()
         .clickToGoDown().isScene0Present()
         ;
-
+    }
+    public void testCircleRoute()
+    {
+        driver.get("https://sotatek-duyta.github.io/Chris-test/home");
+        scene0Page scene0= new scene0Page(driver);
+        scene0.isScene0Present().verifyBtnGoUpVisibleInViewPort()
+                .clickToGoUp().isScene1Present().verifyBtnGoUpVisibleInViewPort()
+                .clickToGoUp().isScene2Present().verifyBtnGoUpVisibleInViewPort()
+                .clickToGoUp().isScene3Present().verifyBtnGoUpVisibleInViewPort()
+                .clickToGoUp().isScene4Present().verifyBtnGoUpVisibleInViewPort()
+                .clickToGoUp().isScene5Present().verifyTheRightBtnVisibleInViewPort()
+                .clickTheRightBtn().isScene7Present()
+                .clickTheMiddleBtn().isScene8Present()
+                .clickToTheleftBtn().isScene9Present()
+                .scrollToTheLeftBtn().clickToTheleftBtn().isScene7Present().verifyTheLeftBtnVisibleInViewPort().scrollToTheRightBtn()
+                .clickTheRightBtn().isScene9Present()
+        ;
 
     }
 }
