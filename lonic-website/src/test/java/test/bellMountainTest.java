@@ -3,7 +3,7 @@ package test;
 import org.testng.annotations.Test;
 import page.*;
 public class bellMountainTest extends baseTest{
-    @Test
+    @Test(description="in this test case i check the viewport and background image change, the path to the top and go down")
     public void testViewPortAndChangeScene()
     {
         driver.get("https://sotatek-duyta.github.io/Chris-test/home");
@@ -13,9 +13,7 @@ public class bellMountainTest extends baseTest{
                 .clickToGoUp().isScene2Present().verifyBtnGoUpVisibleInViewPort()
                 .clickToGoUp().isScene3Present().verifyBtnGoUpVisibleInViewPort()
                 .clickToGoUp().isScene4Present().verifyBtnGoUpVisibleInViewPort()
-                .clickToGoUp().isScene5Present().verifyTheRightBtnVisibleInViewPort().scrollToTheMiddleBtn()
-                .clickTheMiddleBtn().isScene6Present().scrollToBtnGoBack().verifyBtnGoBackVisibleInViewPort()
-                .clickToGoback().isScene5Present().verifyTheLeftBtnVisibleInViewPort().scrollToTheRightBtn().verifyTheRightBtnVisibleInViewPort()
+                .clickToGoUp().isScene5Present()
                 .clickTheRightBtn().isScene7Present()
                 .clickTheMiddleBtn().isScene8Present()
                 .clickToTheleftBtn().isScene9Present()
@@ -30,6 +28,7 @@ public class bellMountainTest extends baseTest{
         .clickToGoDown().isScene0Present()
         ;
     }
+    @Test(description="In this testcase, I check the top path circle")
     public void testCircleRoute()
     {
         driver.get("https://sotatek-duyta.github.io/Chris-test/home");
@@ -46,6 +45,19 @@ public class bellMountainTest extends baseTest{
                 .scrollToTheLeftBtn().clickToTheleftBtn().isScene7Present().verifyTheLeftBtnVisibleInViewPort().scrollToTheRightBtn()
                 .clickTheRightBtn().isScene9Present()
         ;
-
+    }
+    @Test(description="test the path to the house scene")
+    public void testPathToTheHouseScene()
+    {
+        driver.get("https://sotatek-duyta.github.io/Chris-test/home");
+        scene0Page scene0= new scene0Page(driver);
+        scene0.isScene0Present().verifyBtnGoUpVisibleInViewPort()
+                .clickToGoUp().isScene1Present().verifyBtnGoUpVisibleInViewPort()
+                .clickToGoUp().isScene2Present().verifyBtnGoUpVisibleInViewPort()
+                .clickToGoUp().isScene3Present().verifyBtnGoUpVisibleInViewPort()
+                .clickToGoUp().isScene4Present().verifyBtnGoUpVisibleInViewPort()
+                .clickToGoUp().isScene5Present().verifyTheRightBtnVisibleInViewPort().scrollToTheMiddleBtn()
+                .clickTheMiddleBtn().isScene6Present()
+                ;
     }
 }

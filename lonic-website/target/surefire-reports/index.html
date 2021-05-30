@@ -91,7 +91,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">1 method,   1 passed</span>
+                    <span class="method-stats">2 methods,   2 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -102,7 +102,12 @@
                     <div class="method-list-content passed suite-Command_line_suite">
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Command_line_suite" title="test.bellMountainTest" class="method navigator-link" hash-for-method="bellTest">bellTest</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Command_line_suite" title="test.bellMountainTest" class="method navigator-link" hash-for-method="testCircleRoute">testCircleRoute</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Command_line_suite" title="test.bellMountainTest" class="method navigator-link" hash-for-method="testViewPortAndChangeScene">testViewPortAndChangeScene</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Command_line_suite -->
@@ -125,9 +130,16 @@
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="bellTest">
-                  </a> <!-- bellTest -->
-                  <span class="method-name">bellTest</span>
+                  <a name="testCircleRoute">
+                  </a> <!-- testCircleRoute -->
+                  <span class="method-name">testCircleRoute</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testViewPortAndChangeScene">
+                  </a> <!-- testViewPortAndChangeScene -->
+                  <span class="method-name">testViewPortAndChangeScene</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -184,16 +196,20 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(1);
+data.addRows(2);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'bellTest')
+data.setCell(0, 1, 'testViewPortAndChangeScene')
 data.setCell(0, 2, 'test.bellMountainTest')
-data.setCell(0, 3, 65789);
+data.setCell(0, 3, 93643);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'testCircleRoute')
+data.setCell(1, 2, 'test.bellMountainTest')
+data.setCell(1, 3, 59201);
 window.suiteTableData['Command_line_suite']= { tableData: data, tableDiv: 'times-div-Command_line_suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 1 minutes</span>
+              <span class="suite-total-time">Total running time: 2 minutes</span>
               <div id="times-div-Command_line_suite">
               </div> <!-- times-div-Command_line_suite -->
             </div> <!-- times-div -->
@@ -226,15 +242,27 @@ return data;
               </div> <!-- configuration-class before -->
               <div class="configuration-method before">
                 <span class="method-name">setupTest</span>
-                <span class="method-start">1401 ms</span>
+                <span class="method-start">1691 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
-                <span class="method-name">bellTest</span>
-                <span class="method-start">2373 ms</span>
+                <span class="method-name">testCircleRoute</span>
+                <span class="method-start">2602 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">after</span>
-                <span class="method-start">68164 ms</span>
+                <span class="method-start">61805 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setupTest</span>
+                <span class="method-start">61944 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">testViewPortAndChangeScene</span>
+                <span class="method-start">62605 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">after</span>
+                <span class="method-start">156248 ms</span>
               </div> <!-- configuration-method after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
