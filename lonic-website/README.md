@@ -14,4 +14,5 @@ mvn test
 <h3>Report</h3>
 
 -  I spent 24 hours for the project.
-- if you had more time, i will improve file BaseTest
+-  In this project, I checked change scene, what is button visible in viewport. When i click change scene button, the background image will change. When i go to higher place, my viewport will point to the direction where the button goes higher and vice versa. I check path to the house scene, the top path circle
+- I will upgrade the old functions to be more optimized, catch the exceptions
